@@ -18,22 +18,22 @@ Python codes for robotics algorithm.
    * [Requirements](#requirements)
    * [Documentation](#documentation)
    * [How to use](#how-to-use)
-   * [Localization](#localization)
+   * [Localization 定位](#localization)
       * [Extended Kalman Filter localization](#extended-kalman-filter-localization)
       * [Particle filter localization](#particle-filter-localization)
       * [Histogram filter localization](#histogram-filter-localization)
-   * [Mapping](#mapping)
+   * [Mapping 建图](#mapping)
       * [Gaussian grid map](#gaussian-grid-map)
       * [Ray casting grid map](#ray-casting-grid-map)
       * [Lidar to grid map](#lidar-to-grid-map)
       * [k-means object clustering](#k-means-object-clustering)
       * [Rectangle fitting](#rectangle-fitting)
-   * [SLAM](#slam)
+   * [SLAM 同时定位和建图](#slam)
       * [Iterative Closest Point (ICP) Matching](#iterative-closest-point-icp-matching)
       * [FastSLAM 1.0](#fastslam-10)
       * [Pose Optimization SLAM 2D](#pose-optimization-slam-2d)
       * [Pose Optimization SLAM 3D](#pose-optimization-slam-3d)
-   * [Path Planning](#path-planning)
+   * [Path Planning 路径规划](#path-planning)
       * [Dynamic Window Approach](#dynamic-window-approach)
       * [Grid based search](#grid-based-search)
          * [Dijkstra algorithm](#dijkstra-algorithm)
@@ -52,17 +52,17 @@ Python codes for robotics algorithm.
       * [Reeds Shepp planning](#reeds-shepp-planning)
       * [LQR based path planning](#lqr-based-path-planning)
       * [Optimal Trajectory in a Frenet Frame](#optimal-trajectory-in-a-frenet-frame)
-   * [Path Tracking](#path-tracking)
+   * [Path Tracking 路径跟踪](#path-tracking)
       * [move to a pose control](#move-to-a-pose-control)
       * [Stanley control](#stanley-control)
       * [Rear wheel feedback control](#rear-wheel-feedback-control)
       * [Linear–quadratic regulator (LQR) speed and steering control](#linearquadratic-regulator-lqr-speed-and-steering-control)
       * [Model predictive speed and steering control](#model-predictive-speed-and-steering-control)
       * [Nonlinear Model predictive control with C-GMRES](#nonlinear-model-predictive-control-with-c-gmres)
-   * [Arm Navigation](#arm-navigation)
+   * [Arm Navigation 机械臂导航规划](#arm-navigation)
       * [N joint arm to point control](#n-joint-arm-to-point-control)
       * [Arm navigation with obstacle avoidance](#arm-navigation-with-obstacle-avoidance)
-   * [Aerial Navigation](#aerial-navigation)
+   * [Aerial Navigation 3D导航规划](#aerial-navigation)
       * [drone 3d trajectory following](#drone-3d-trajectory-following)
       * [rocket powered landing](#rocket-powered-landing)
    * [Bipedal](#bipedal)
@@ -133,15 +133,15 @@ All animation gifs are stored here: [AtsushiSakai/PythonRoboticsGifs: Animation 
 
 4. Add star to this repo if you like it :smiley:. 
 
-# Localization
+# Localization “定位”
 
-## Extended Kalman Filter localization
+## Extended Kalman Filter localization 扩展卡尔曼滤波器  EKF
 
 <img src="https://github.com/AtsushiSakai/PythonRoboticsGifs/raw/master/Localization/extended_kalman_filter/animation.gif" width="640" alt="EKF pic">
 
 Documentation: [Notebook](https://github.com/AtsushiSakai/PythonRobotics/blob/master/Localization/extended_kalman_filter/extended_kalman_filter_localization.ipynb)
 
-## Particle filter localization
+## Particle filter localization  粒子滤波器
 
 ![2](https://github.com/AtsushiSakai/PythonRoboticsGifs/raw/master/Localization/particle_filter/animation.gif)
 
@@ -160,7 +160,7 @@ Ref:
 - [PROBABILISTIC ROBOTICS](http://www.probabilistic-robotics.org/)
 
 
-## Histogram filter localization
+## Histogram filter localization  直方图滤波器
 
 ![3](https://github.com/AtsushiSakai/PythonRoboticsGifs/raw/master/Localization/histogram_filter/animation.gif)
 
@@ -180,44 +180,44 @@ Ref:
 
 - [PROBABILISTIC ROBOTICS](http://www.probabilistic-robotics.org/)
 
-# Mapping
+# Mapping  地图构建
 
-## Gaussian grid map
+## Gaussian grid map  高斯栅格地图
 
 This is a 2D Gaussian grid mapping example.
 
 ![2](https://github.com/AtsushiSakai/PythonRoboticsGifs/raw/master/Mapping/gaussian_grid_map/animation.gif)
 
-## Ray casting grid map
+## Ray casting grid map  光线投射栅格地图
 
 This is a 2D ray casting grid mapping example.
 
 ![2](https://github.com/AtsushiSakai/PythonRoboticsGifs/raw/master/Mapping/raycasting_grid_map/animation.gif)
 
-## Lidar to grid map
+## Lidar to grid map  激光雷达栅格地图
 
 This example shows how to convert a 2D range measurement to a grid map.
 
 ![2](Mapping/lidar_to_grid_map/animation.gif)
 
-## k-means object clustering
+## k-means object clustering  K均值目标聚类
 
 This is a 2D object clustering with k-means algorithm.
 
 ![2](https://github.com/AtsushiSakai/PythonRoboticsGifs/raw/master/Mapping/kmeans_clustering/animation.gif)
 
-## Rectangle fitting
+## Rectangle fitting   矩形拟合-车辆检测
 
 This is a 2D rectangle fitting for vehicle detection.
 
 ![2](https://github.com/AtsushiSakai/PythonRoboticsGifs/raw/master/Mapping/rectangle_fitting/animation.gif)
 
 
-# SLAM
+# SLAM  同时定位和建图
 
 Simultaneous Localization and Mapping(SLAM) examples
 
-## Iterative Closest Point (ICP) Matching
+## Iterative Closest Point (ICP) Matching  迭代最近点匹配
 
 This is a 2D ICP matching example with singular value decomposition.
 
@@ -251,14 +251,14 @@ Ref:
 - [SLAM simulations by Tim Bailey](http://www-personal.acfr.usyd.edu.au/tbailey/software/slam_simulations.htm)
 
 
-## Pose Optimization SLAM 2D
+## Pose Optimization SLAM 2D   2D位姿优化
 
 This is a graph based 2D pose optimization SLAM example.
 
 ![3](https://github.com/AtsushiSakai/PythonRoboticsGifs/raw/master/SLAM/PoseOptimizationSLAM2D/animation.gif)
 
 
-## Pose Optimization SLAM 3D
+## Pose Optimization SLAM 3D   3D位姿优化
 
 This is a graph based 3D pose optimization SLAM example.
 
@@ -266,9 +266,9 @@ This is a graph based 3D pose optimization SLAM example.
 
 
 
-# Path Planning
+# Path Planning    路径规划 
 
-## Dynamic Window Approach
+## Dynamic Window Approach  动态窗口法
 
 This is a 2D navigation sample code with Dynamic Window Approach.
 
@@ -277,7 +277,7 @@ This is a 2D navigation sample code with Dynamic Window Approach.
 ![2](https://github.com/AtsushiSakai/PythonRoboticsGifs/raw/master/PathPlanning/DynamicWindowApproach/animation.gif)
 
 
-## Grid based search
+## Grid based search     基于网格的搜索
 
 ### Dijkstra algorithm
 
@@ -297,7 +297,7 @@ In the animation, cyan points are searched nodes.
 
 Its heuristic is 2D Euclid distance.
 
-### Potential Field algorithm
+### Potential Field algorithm  势场 (Potential Field) 算法
 
 This is a 2D grid based path planning with Potential Field algorithm.
 
