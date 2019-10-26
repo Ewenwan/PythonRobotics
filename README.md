@@ -279,7 +279,7 @@ This is a 2D navigation sample code with Dynamic Window Approach.
 
 ## Grid based search     基于网格的搜索
 
-### Dijkstra algorithm
+### Dijkstra algorithm  迪杰斯特拉算法
 
 This is a 2D grid based shortest path planning with Dijkstra's algorithm.
 
@@ -315,7 +315,7 @@ This is a 2D grid based coverage path planning simulation.
 
 ![PotentialField](https://github.com/AtsushiSakai/PythonRoboticsGifs/raw/master/PathPlanning/GridBasedSweepCPP/animation.gif)
 
-## State Lattice Planning
+## State Lattice Planning   状态晶格规划
 
 This script is a path planning code with state lattice planning.
 
@@ -328,16 +328,16 @@ Ref:
 - [State Space Sampling of Feasible Motions for High-Performance Mobile Robot Navigation in Complex Environments](http://www.frc.ri.cmu.edu/~alonzo/pubs/papers/JFR_08_SS_Sampling.pdf)
 
 
-### Biased polar sampling
+### Biased polar sampling   有偏极性采样
 
 ![PythonRobotics/figure_1.png at master · AtsushiSakai/PythonRobotics](https://github.com/AtsushiSakai/PythonRoboticsGifs/raw/master/PathPlanning/StateLatticePlanner/BiasedPolarSampling.gif)
 
 
-### Lane sampling
+### Lane sampling   车道采样
 
 ![PythonRobotics/figure_1.png at master · AtsushiSakai/PythonRobotics](https://github.com/AtsushiSakai/PythonRoboticsGifs/raw/master/PathPlanning/StateLatticePlanner/LaneSampling.gif)
 
-## Probabilistic Road-Map (PRM) planning 
+## Probabilistic Road-Map (PRM) planning  随机路图规划
 
 ![PRM](https://github.com/AtsushiSakai/PythonRoboticsGifs/raw/master/PathPlanning/ProbabilisticRoadMap/animation.gif)
 
@@ -355,7 +355,7 @@ Ref:
 
 　　
 
-## Rapidly-Exploring Random Trees (RRT)
+## Rapidly-Exploring Random Trees (RRT)  快速遍历随机树
 
 ### RRT\*
 
@@ -371,7 +371,7 @@ Ref:
 
 - [Sampling-based Algorithms for Optimal Motion Planning](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.419.5503&rep=rep1&type=pdf)
 
-### RRT\* with reeds-shepp path
+### RRT\* with reeds-shepp path   基于reeds-shepp路径的RRT* 
 
 ![Robotics/animation.gif at master · AtsushiSakai/PythonRobotics](https://github.com/AtsushiSakai/PythonRoboticsGifs/raw/master/PathPlanning/RRTStarReedsShepp/animation.gif))
 
@@ -392,7 +392,7 @@ Ref:
 - [MahanFathi/LQR\-RRTstar: LQR\-RRT\* method is used for random motion planning of a simple pendulum in its phase plot](https://github.com/MahanFathi/LQR-RRTstar)
 
 
-## Quintic polynomials planning
+## Quintic polynomials planning   五次多项式
 
 Motion planning with quintic polynomials.
 
@@ -404,7 +404,7 @@ Ref:
 
 - [Local Path Planning And Motion Control For Agv In Positioning](http://ieeexplore.ieee.org/document/637936/)
 
-## Reeds Shepp planning
+## Reeds Shepp planning   Reeds Shepp规划
 
 A sample code with Reeds Shepp path planning.
 
@@ -419,14 +419,14 @@ Ref:
 - [ghliu/pyReedsShepp: Implementation of Reeds Shepp curve\.](https://github.com/ghliu/pyReedsShepp)
 
 
-## LQR based path planning
+## LQR based path planning   基于LQR的路径规划
 
 A sample code using LQR based path planning for double integrator model.
 
 ![RSPlanning](https://github.com/AtsushiSakai/PythonRoboticsGifs/raw/master/PathPlanning/LQRPlanner/animation.gif?raw=true)
 
 
-## Optimal Trajectory in a Frenet Frame 
+## Optimal Trajectory in a Frenet Frame   Frenet Frame中的最优轨迹
 
 ![3](https://github.com/AtsushiSakai/PythonRoboticsGifs/raw/master/PathPlanning/FrenetOptimalTrajectory/animation.gif)
 
@@ -443,9 +443,9 @@ Ref:
 - [Optimal trajectory generation for dynamic street scenarios in a Frenet Frame](https://www.youtube.com/watch?v=Cj6tAQe7UCY)
 
 
-# Path Tracking
+# Path Tracking  路径追踪
 
-## move to a pose control
+## move to a pose control  移动姿势追踪
 
 This is a simulation of moving to a pose control
 
@@ -456,7 +456,7 @@ Ref:
 - [P. I. Corke, "Robotics, Vision and Control" \| SpringerLink p102](https://link.springer.com/book/10.1007/978-3-642-20144-8)
 
 
-## Stanley control
+## Stanley control  轮式控制 PID控制
 
 Path tracking simulation with Stanley steering control and PID speed control.
 
@@ -470,7 +470,7 @@ Ref:
 
 
 
-## Rear wheel feedback control
+## Rear wheel feedback control  后轮反馈控制
 
 Path tracking simulation with rear wheel feedback steering control and PID speed control.
 
@@ -481,7 +481,7 @@ Ref:
 - [A Survey of Motion Planning and Control Techniques for Self-driving Urban Vehicles](https://arxiv.org/abs/1604.07446)
 
 
-## Linear–quadratic regulator (LQR) speed and steering control
+## Linear–quadratic regulator (LQR) speed and steering control  线性二次调节器（LQR）速度与转向控制
 
 Path tracking simulation with LQR speed and steering control.
 
@@ -492,7 +492,7 @@ Ref:
 - [Towards fully autonomous driving: Systems and algorithms \- IEEE Conference Publication](http://ieeexplore.ieee.org/document/5940562/)
 
 
-## Model predictive speed and steering control
+## Model predictive speed and steering control  模型预测速度和转向控制
 
 Path tracking simulation with iterative linear model predictive speed and steering control.
 
@@ -504,7 +504,7 @@ Ref:
 
 - [Real\-time Model Predictive Control \(MPC\), ACADO, Python \| Work\-is\-Playing](http://grauonline.de/wordpress/?page_id=3244)
 
-## Nonlinear Model predictive control with C-GMRES
+## Nonlinear Model predictive control with C-GMRES   非线性模型预测控制
 
 A motion planning and path tracking simulation with NMPC of C-GMRES 
 
@@ -515,9 +515,9 @@ Ref:
 - [notebook](https://github.com/AtsushiSakai/PythonRobotics/blob/master/PathTracking/cgmres_nmpc/cgmres_nmpc.ipynb)
 
 
-# Arm Navigation
+# Arm Navigation  机械臂导航
 
-## N joint arm to point control
+## N joint arm to point control   N关节手臂的点控制
 
 N joint arm to a point control simulation.
 
@@ -529,22 +529,22 @@ You can set the goal position of the end effector with left-click on the ploting
 
 In this simulation N = 10, however, you can change it.
 
-## Arm navigation with obstacle avoidance 
+## Arm navigation with obstacle avoidance   臂导航避障
 
 Arm navigation with obstacle avoidance simulation.
 
 ![3](https://github.com/AtsushiSakai/PythonRoboticsGifs/raw/master/ArmNavigation/arm_obstacle_navigation/animation.gif)
 
 
-# Aerial Navigation
+# Aerial Navigation   航空导航
 
-## drone 3d trajectory following 
+## drone 3d trajectory following   无人机三维轨迹跟踪
 
 This is a 3d trajectory following simulation for a quadrotor.
 
 ![3](https://github.com/AtsushiSakai/PythonRoboticsGifs/raw/master/AerialNavigation/drone_3d_trajectory_following/animation.gif)
 
-## rocket powered landing
+## rocket powered landing   降落
 
 This is a 3d trajectory generation simulation for a rocket powered landing.
 
